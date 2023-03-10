@@ -1,5 +1,5 @@
 {
-  "name": "the-lord-of-the-rings-sdk",
+  "name": "bds-lor-api-sdk",
   "version": "1.0.0",
   "description": "Take home project - The Lord of the Rings SDK",
   "main": "lorMain.js",

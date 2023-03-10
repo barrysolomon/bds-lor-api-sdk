@@ -1,6 +1,6 @@
 # The One API SDK Wrapper
 
-This SDK wrapper provides access to "The One API" at https://the-one-api.dev/v2. 
+This SDK wrapper provides access to "The One API" https://the-one-api.dev/. 
 
 The class includes three methods:
 - `getMovies`:          Retrieve all movies from The One API.

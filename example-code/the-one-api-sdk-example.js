@@ -1,5 +1,7 @@
 
 require('dotenv').config();
+const TheOneAPI = require('bds-lor-api-sdk');
+//const TheOneAPI = require('../sdk/the-one-api-sdk.js');
 
 const TheOneApiKey = process.env.ONE_API_KEY;
 if (process.env.ONE_API_KEY === undefined)

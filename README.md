@@ -23,18 +23,20 @@ To use this SDK, you will need:
 1. Clone this repository: `git clone https://github.com/your-username/the-one-api-sdk.git`
 2. Install the dependencies: `npm install`
 
-To install dotenv, axios and jest separately, you can run the following commands:
+To install required packages separately, you can run the following commands:
 
 - npm install axios
 - npm install jest --save-dev
 - npm install dotenv
+- npm install bds-lor-api-sdk
 
 ## Usage
 
 Replace 'YOUR_API_KEY' with your actual API key. This example code creates a new instance of the `TheOneApi` class, calls its methods to retrieve information from The One API, and logs the results to the console.
 
 ```javascript
-const TheOneApi = require('./sdk/the-one-api-sdk.js');
+const TheOneAPI = require('bds-lor-api-sdk');
+//const TheOneAPI = require('../sdk/the-one-api-sdk.js');
 
 const apiKey = 'YOUR_API_KEY';
 const api = new TheOneApi(apiKey);

@@ -28,7 +28,8 @@ if (process.env.ONE_API_KEY === undefined)
   throw new Error("process.env.ONE_API_KEY is undefined");
 
 const axios = require('axios');
-const TheOneAPI = require('../sdk/the-one-api-sdk.js');
+const TheOneAPI = require('bds-lor-api-sdk');
+//const TheOneAPI = require('../sdk/the-one-api-sdk.js');
 
 jest.mock('axios');
 

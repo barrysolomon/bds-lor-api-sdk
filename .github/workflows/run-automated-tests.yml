@@ -3,7 +3,7 @@ name: Run Jest Sanity Tests
 on:
   push:
     branches:
-    - main
+    - master
 
 jobs:
   test:

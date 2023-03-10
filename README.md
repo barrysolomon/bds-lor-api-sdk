@@ -34,23 +34,27 @@ To install dotenv, axios and jest separately, you can run the following commands
 Replace 'YOUR_API_KEY' with your actual API key. This example code creates a new instance of the `TheOneApi` class, calls its methods to retrieve information from The One API, and logs the results to the console.
 
 ```javascript
-const TheOneApi = require('./the-one-api');
+const TheOneApi = require('./sdk/the-one-api-sdk.js');
 
 const apiKey = 'YOUR_API_KEY';
 const api = new TheOneApi(apiKey);
 
 async function main() {
-  const movies = await api.getMovies();
-  console.log(movies);
+  
+  const movies = await api.lorMoviesGet();
+  console.log('lorMoviesGet(): ', movies);
 
-  const movie = await api.getMovieById('movie-id');
-  console.log(movie);
+  const movieId = '5cd95395de30eff6ebccde5c';
+  const movie = await api.lorMovieByIdGet(movieId);
+  console.log(`lorMoviesGet(${movieId}): `, movie);
 
-  const quotes = await api.getMovieQuotesById('movie-id');
-  console.log(quotes);
+  const movieQuotes = await api.lorMovieQuotesByIdGet(movieId);
+  console.log(`lorMovieQuotesByIdGet(${movieId}):`, movieQuotes);
+
 }
 
 main();
+```
 
 ## Testing
 

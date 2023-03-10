@@ -15,5 +15,10 @@ jobs:
 
       run: npm install
 
+    - name: create env file
+      run: |
+        touch .env
+        echo ONE_API_KEY=${{ secrets.ONE_API_KEY }} >> .env
+
     - name: Run Jest test
       run: npm test

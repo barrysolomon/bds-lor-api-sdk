@@ -4,19 +4,13 @@
  * 
  * For the /movie function:
  *  Test that the function returns a list of movies when called with valid authentication credentials.
- *  [TODO] Test that the function returns an error message when called without valid authentication credentials.
- *  [TODO] Test that the function returns an error message when called with an invalid API endpoint.
  * 
  * For the /movie/{id} function:
  *  Test that the function returns the correct movie information when called with a valid movie ID.
- *  [TODO] Test that the function returns an error message when called with an invalid movie ID.
- *  [TODO] Test that the function returns an error message when called without valid authentication credentials.
  * 
  * For the /movie/{id}/quote function:
  * 
  *  Test that the function returns a list of quotes for the specified movie when called with a valid movie ID.
- *  [TODO] Test that the function returns an error message when called with an invalid movie ID.
- *  [TODO] Test that the function returns an error message when called without valid authentication credentials.
  * 
  * Additionally, some edge cases to consider:
  * 
